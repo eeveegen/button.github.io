@@ -4,24 +4,63 @@ body, h1, h2, p, u1, li {
     padding: 0;
   }
 
-  /* Apply some basic styles */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+  html {
+    height: 100%;
   }
 
-  header {
+  /* Apply some basic styles */
+  body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background: #ffffff;
+    background: linear-gradient(179deg,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 45%, rgba(219, 228, 255, 1) 100%);
+    /*font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;*/
+  }
+
+  /*header {
     background-color: #333;
     padding: 20px;
   }
 
   h1 {
-    color: #fff;
+    color: #000000;
     font-size: 28px;
     margin-bottom: 10px;
   }
 
   nav u1 {
     list-style: none;
+  }*/
+
+  .wrapper {
+    text-align: center;
+  }
+
+  button {
+  background-color: #5993ff;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  /*font-family: 'Times New Roman', serif;*/
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px 0 rgba(61, 84, 129, 0.6);
+  } 
+  button:hover {
+    background-color: #4f8bfa;
+  }
+
+  .counter {
+    width: 10%;
+    height: 10%
   }

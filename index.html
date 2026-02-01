@@ -1,29 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <!-- link rel="stylesheet" href="web.css"-->
-    <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css">
-    <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+    <head>
+        <title>
+            Not-Python Website
+        </title>
 
-    <title>Button</title>
-</head>
-<body>
-    <header>
-        <h1>I want to press the button!</h1>
-    </header>
+        <link rel="stylesheet" href="web.css">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <h1 align="center" style="margin-bottom: 30px; margin-top: 30px;">I am a button</h1>
+        <div class="wrapper">
+            <button id="submit-button" class="counter" type="submit" onclick="document.getElementById('submit-button').innerHTML = testfunc(document.getElementById('submit-button').innerHTML);">Click me!</button>
+            <p></p>
+        </div>
+    </body>
+</html>
 
-    <section class="pyscript">
-        Hello world! <br />
-        This is the current date and time, as computed by Python:
-        <script type="py">
-            from pyscript import display
-            from datetime import datetime
-            now = datetime.now()
-            display(now.strftime("%m/%d/%Y, %H:%M:%S"))
-        </script>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 My First Website project. If you want to laugh at it, begone. All rights not reserved because who has money for rights in this economy.</p>
-    </footer>
-</body>
